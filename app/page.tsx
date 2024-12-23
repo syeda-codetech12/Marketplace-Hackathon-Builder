@@ -8,7 +8,7 @@ import Story from './components/Story'
 
 const page = () => {
   return (
-    <div>
+    <div className='max-w-screen overflow-hidden'>
       <Hero/>
       <Pieces/>
       <TopPicks/>

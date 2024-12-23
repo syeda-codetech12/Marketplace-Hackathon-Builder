@@ -5,8 +5,8 @@ import product1 from '../images/Granite square side table 1.png'
 import product2 from '../images/Cloud sofa three seater + ottoman_3 1.png'
 const Pieces = () => {
   return (
-    <div className='h-screen flex items-center justify-around bg-[#FAF4F4]'>
-        <div className='w-[605px] h-[562px] mt-16'>
+    <div className=' md:h-screen flex flex-col md:flex-row items-center gap-20 md:justify-around bg-[#FAF4F4]'>
+        <div className='w-[60%] h-[70%] md:w-[605px] md:h-[562px] mr-14 flex flex-col md:mt-16'>
         <div>
             <Image
             src={product1}
@@ -15,13 +15,13 @@ const Pieces = () => {
             height={562}
             />
         </div>
-        <div className='flex flex-col gap-5 -mt-40 ml-32'>
-            <p className='text-4xl font-medium'>Side Table</p>
-            <p className='w-fit h-10 text-2xl font-medium border-black border-b-2 cursor-pointer'>View More</p>
+        <div className='w-full flex flex-col gap-2 sm:gap-5 -mt-16 sm:-mt-40 md:-mt-5 xl:-mt-40 md:ml-20 '>
+            <p className=' text-2xl md:text-4xl font-medium'>Side Table</p>
+            <p className='w-fit h-10 md:text-2xl font-medium border-black border-b-2 cursor-pointer'>View More</p>
         </div>
         </div>
 
-        <div className='w-[605px] h-[562px] mr-36 flex flex-col gap-10 mt-16'>
+        <div className='w-[60%] h-[70%] md:w-[605px] md:h-[562px] mr-14 lg:mr-36 flex flex-col md:mt-16 '>
         <div>
             <Image
             src={product2}
@@ -30,9 +30,9 @@ const Pieces = () => {
             height={562}
             />
         </div>
-        <div className='flex flex-col gap-5 -mt-40 ml-32'>
-            <p className='text-4xl font-medium'>Side Table</p>
-            <p className='w-fit h-10 text-2xl font-medium border-black border-b-2 cursor-pointer'>View More</p>
+        <div className='w-full flex flex-col gap-2 sm:gap-5 -mt-14 sm:-mt-40 md:-mt-1 xl:-mt-[125px] md:ml-20'>
+            <p className='w-full text-2xl md:text-4xl font-medium'>Side Table</p>
+            <p className='w-fit h-10 md:text-2xl font-medium border-black border-b-2 cursor-pointer mb-10 md:mb-0'>View More</p>
         </div>
         </div>
 

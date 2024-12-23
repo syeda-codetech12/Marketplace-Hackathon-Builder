@@ -15,11 +15,11 @@ const Blogs = () => {
         <div>
             <div className='mt-20'>
                 <p className='text-center font-medium text-4xl mb-6'>Our Blogs</p>
-                <p className='font-medium text-[#9F9F9F] text-center mb-8'>Find a bright ideal to suit your taste with our great selection</p>
+                <p className='font-medium text-[#9F9F9F] text-center mb-8 px-5 md:mx-0'>Find a bright ideal to suit your taste with our great selection</p>
             </div>
             <div>
-                <div className='flex gap-10 items-center justify-center'>
-                    <div className='flex flex-col gap-5 items-center'>
+                <div className='flex flex-col md:flex-row  gap-20 md:gap-10 items-center justify-center px-5 xl:px-0'>
+                    <div className='px-12 md:px-0 flex flex-col gap-5 items-center'>
                         <div>
                             <Image
                                 src={blog1}
@@ -29,14 +29,14 @@ const Blogs = () => {
                                 className='object-cover'
                             />
                         </div>
-                        <div className='text-[20px] font-normal'>Going all-in with millennial design</div>
-                        <div className='cursor-pointer w-[130px] h-[46px] border-black border-b-2 text-2xl font-medium'>Read More</div>
+                        <div className='lg:text-[20px] font-normal text-center xl:text-start'>Going all-in with millennial design</div>
+                        <div className='cursor-pointer xl:w-[130px] xl:h-[46px] border-black border-b-2 xl:text-2xl font-medium'>Read More</div>
                         <div>
                         <AiOutlineClockCircle className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>5 min </span>
+                            <span className='font-light mr-4 lg:mr-8 '>5 min </span>
 
                             <IoCalendarClearOutline className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>12<sup>th</sup> Oct 2022</span>
+                            <span className='font-light'>12<sup>th</sup> Oct 2022</span>
                         </div>
                     </div>
 
@@ -47,7 +47,7 @@ const Blogs = () => {
 
 
 
-                    <div className='flex flex-col gap-5 items-center'>
+                    <div className='px-12 md:px-0  flex flex-col gap-5 items-center'>
                         <div>
                             <Image
                                 src={blog2}
@@ -57,14 +57,14 @@ const Blogs = () => {
                                 className='object-cover'
                             />
                         </div>
-                        <div className='text-[20px] font-normal'>Going all-in with millennial design</div>
-                        <div className='cursor-pointer w-[130px] h-[46px] border-black border-b-2 text-2xl font-medium'>Read More</div>
+                        <div className='lg:text-[20px] font-normal text-center xl:text-start'>Going all-in with millennial design</div>
+                        <div className='cursor-pointer xl:w-[130px] xl:h-[46px] border-black border-b-2 xl:text-2xl font-medium'>Read More</div>
                         <div>
                         <AiOutlineClockCircle className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>5 min </span>
+                            <span className='font-light mr-4  lg:mr-8'>5 min </span>
 
                             <IoCalendarClearOutline className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>12<sup>th</sup> Oct 2022</span>
+                            <span className='font-light'>12<sup>th</sup> Oct 2022</span>
                         </div>
                     </div>
 
@@ -72,7 +72,7 @@ const Blogs = () => {
 
 
                     
-                    <div className='flex flex-col gap-5 items-center'>
+                    <div className='px-12 md:px-0 flex flex-col gap-5 items-center'>
                         <div>
                             <Image
                                 src={blog3}
@@ -82,14 +82,14 @@ const Blogs = () => {
                                 className='object-cover'
                             />
                         </div>
-                        <div className='text-[20px] font-normal'>Going all-in with millennial design</div>
-                        <div className='cursor-pointer w-[130px] h-[46px] border-black border-b-2 text-2xl font-medium'>Read More</div>
+                        <div className='lg:text-[20px] font-normal text-center xl:text-start'>Going all-in with millennial design</div>
+                        <div className='cursor-pointer xl:w-[130px] xl:h-[46px] border-black border-b-2 xl:text-2xl font-medium'>Read More</div>
                         <div>
                         <AiOutlineClockCircle className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>5 min </span>
+                            <span className=' font-light mr-4 lg:mr-8'>5 min </span>
 
                             <IoCalendarClearOutline className='size-5 inline mr-2'/>
-                            <span className='font-light mr-8'>12<sup>th</sup> Oct 2022</span>
+                            <span className='font-light'>12<sup>th</sup> Oct 2022</span>
                         </div>
                     </div>
 

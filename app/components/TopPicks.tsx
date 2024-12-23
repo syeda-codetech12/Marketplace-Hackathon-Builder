@@ -44,8 +44,8 @@ const TopPicks: React.FC = () => {
         des="Find a bright idea to suit your taste with our great selection of suspension, floor, and table lights."
         products={products}
       />
-      <div className='w-full flex items-center justify-center mb-10'>
-      <button className='w-[115px] h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer'>View All</button>
+      <div className='w-full flex items-center justify-center '>
+      <button className='w-[115px] h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer -mt-20 lg:-mt-10 mb-10'>View All</button>
       </div>
     </div>
   );

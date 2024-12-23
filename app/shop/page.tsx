@@ -15,19 +15,19 @@ const shop = () => {
         <Main heading='Shop' page='Shop'/>
 
             
-            <div className='h-[100px] w-full bg-[#FAF4F4] flex justify-around'>
-            <div className='flex gap-4 items-center justify-center'>
+            <div className='h-auto xl:h-[100px] w-full bg-[#FAF4F4] flex flex-col gap-5 lg:flex-row lg:gap-0 lg:justify-around py-3'>
+            <div className='flex gap-2 sm:gap-4 items-center justify-center'>
             <HiOutlineAdjustmentsHorizontal className='size-5'/>
-            <span className='font-normal text-[20px]'>Filter</span>
+            <span className='font-normal sm:text-[20px]'>Filter</span>
             <PiCirclesFourFill className='size-5'/>
             <BsViewList className='size-5'/>
-            <pre className='font-sans text-[18px] '>|     Showing 1–16 of 32 results</pre>
+            <pre className='font-sans sm:text-[18px] '>|    Showing 1–16 of 32 results</pre>
             </div>
             <div className='flex gap-4 items-center justify-center'>
-                <span className='font-normal text-[20px] '>Show</span>
+                <span className='font-normal sm:text-[20px] '>Show</span>
                 <span className='w-[55px] h-[55px] bg-white text-[20px] text-[#9F9F9F] p-[14px]'>16</span>
-                <span className='font-normal text-[20px] '>Sort by</span>
-                <span  className='w-[185px] h-[55px] bg-white text-[20px] text-[#9F9F9F] p-[14px]'>Default</span>
+                <span className='font-normal sm:text-[20px] '>Sort by</span>
+                <span  className='w-auto h-auto sm:w-[185px] sm:h-[55px] bg-white sm:text-[20px] text-[#9F9F9F] p-[14px]'>Default</span>
             </div>
             </div>
             <div>
