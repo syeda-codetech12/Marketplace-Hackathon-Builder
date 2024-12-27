@@ -13,20 +13,38 @@ const cart = () => {
       <div>
       <Main heading='Cart' page='Cart'/>
       </div>
-      <div className='xl:w-[1150px] flex flex-row lg:gap-10 xl:justify-between items-center justify-center mx-auto '>
-        <div className='w-fit h-auto p-7 xl:w-[720px] xl:h-[55px] bg-[#FFF9E5] flex items-center justify-center pr-10'>
-          <div className='xl:w-[420px] flex justify-around'>
-            <span className='mr-5 sm:mr-20 font-medium'>Product</span>
-            <span className='mr-5 sm:mr-28 font-medium'>Price</span>
-            <span className='mr-5 sm:mr-16 font-medium'>Quantity</span>
-            <span className='mr-5 font-medium'>Subtotal</span>
-          </div>
+      <div className='w-screen xl:w-[1150px] flex flex-col gap-40 md:flex-row md:gap-10 xl:gap-0 xl:justify-between items-center justify-center mx-auto md:items-start'>
+        <div className='h-fit w-fit py-20 px-10 xl:w-[720px] xl:h-16  bg-[#FFF9E5] xl:px-0 xl:py-0'>
           <div>
-           
+            <div className=' grid gap-y-2  mt-16 xl:grid-cols-[140px,130px,140px,125px,90px] xl:gap-y-14 xl:pt-6 xl:mt-0'>
+              <p className=' xl:col-start-2 font-medium'>Product</p>
+              <p className=' font-medium'>Price</p>
+              <p className='font-medium'>Quantity</p>
+              <p className='font-medium'>Subtotal</p>
+              <div className='ml-40 flex flex-col gap-3 xl:grid xl:grid-cols-6 xl:gap-x-[135px] xl:items-center xl:ml-0 '>
+              <div className='w-[105px] h-[105px] bg-[#FBEBB5]  -mt-64 xl:flex items-center xl:justify-center xl:rounded-md xl:-mt-0'>
+                        <Image
+                            src={image}
+                            alt='productImage'
+                            width={100}
+                            height={100}
+                            quality={100}
+                            className='col-start-2'
+                        />
+                    </div>
+              <p className='text-[#9F9F9F] text-nowrap mt-2 xl:mt-0'>Asgaard sofa</p>
+              <p className='text-[#9F9F9F] text-nowrap'>Rs. 250,000.00</p>
+              <span className='xl:w-fit xl:h-fit xl:border-2 xl:rounded-sm xl:p-1 xl:pl-3 xl:pr-3 xl:ml-6'>1</span>
+              <p className='text-nowrap -mt-2 xl:-mt-0'>Rs. 250,000.00 </p>
+              <RiDeleteBin7Fill className=' text-[#FBEBB5] size-6 ml-12 -mt-2'/>
+             
+            </div>
           </div>
+          </div>
+        
         </div>
-
-        <div className='w-auto h-auto xl:w-[395px] xl:h-[390px] bg-[#FFF9E5] p-10 xl:pt-5 xl:p-0 flex flex-col items-center justify-start gap-7'>
+        <div>
+        <div className='w-fit h-fit xl:w-[395px] xl:h-[390px] bg-[#FFF9E5] p-10 xl:pt-5 xl:p-0 flex flex-col items-center justify-start gap-7'>
           <p className='mb-5 text-4xl font-semibold'>
             Cart Totals
         </p>
@@ -40,32 +58,16 @@ const cart = () => {
         </div>
         <button className='w-[220px] h-[55px] border-black border-[1.3px] text-[20px] rounded-lg'>Check Out</button>
         </div>
+        </div>
+        
 
-      </div>
-      <div className='pl-14 -mt-32 mb-60 flex flex-row lg:gap-0 items-center'>
-            <div className='w-[105px] h-[105px] bg-[#FBEBB5] flex items-center justify-center rounded-md'>
-                        <Image
-                            src={image}
-                            alt='productImage'
-                            width={100}
-                            height={100}
-                            quality={100}
-                            className=''
-                        />
-                    </div>
-                    <div className='lg:w-auto lg:h-auto xl:w-[610px] xl:h-[25px] flex gap-3 sm:gap-[70px] lg:gap-5 xl:gap-10 2xl:gap-16 xl:pl-10'>
-                      <span className='xl:w-full text-nowrap text-[#9F9F9F]'>Asgaard sofa</span>
-                      <span className='xl:w-full text-nowrap text-[#9F9F9F]'>Rs. 250,000.00</span>
-                      <span className='w-fit h-fit border-2 rounded-sm p-1 pl-3 pr-3 ml-6'>1</span>
-                      <span className='xl:w-full text-nowrap ml-9'>Rs. 250,000.00</span>
-                      <span><RiDeleteBin7Fill className='inline text-[#FBEBB5] size-6 mb-1'/> </span>
-                    </div>
-            </div>
-
-            <Facilities/>
          
+    </div>
+    <Facilities/>
+
     </div>
   )
 }
 
 export default cart
+
