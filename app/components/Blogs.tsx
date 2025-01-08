@@ -8,6 +8,7 @@ import blog3 from '../images/Rectangle 15.png'
 
 import { IoCalendarClearOutline } from "react-icons/io5";
 import { AiOutlineClockCircle } from 'react-icons/ai'
+import Link from 'next/link'
 
 const Blogs = () => {
   return (
@@ -100,7 +101,7 @@ const Blogs = () => {
 
 
             <div className='w-full flex items-center justify-center mt-14 mb-16'>
-      <button className='w-fit h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer'>View All Posts</button>
+            <Link href="/blog"><button className='w-fit h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer'>View All Posts</button></Link>
       </div>
         </div>
     </div>

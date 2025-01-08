@@ -45,6 +45,7 @@
 import React from 'react';
 import Image from 'next/image';
 import arrival from '../images/Asgaard sofa 1.png';
+import Link from 'next/link';
 
 const Arrivals = () => {
   return (
@@ -70,9 +71,9 @@ const Arrivals = () => {
           <p className="text-xl md:text-3xl xl:text-5xl font-bold leading-snug mb-6">
             Asgaard Sofa
           </p>
-          <button className="w-[250px] h-[65px] text-black  border-black border-[1px] text-2xl font-normal flex items-center justify-center">
+          <Link href="/shop"><button className="w-[250px] h-[65px] text-black  border-black border-[1px] text-2xl font-normal flex items-center justify-center">
 Order Now
-        </button>
+        </button></Link>
         </div>
       </div>
     </section>

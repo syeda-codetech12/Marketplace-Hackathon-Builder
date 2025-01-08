@@ -8,6 +8,7 @@ import item1 from '../images/Mask group.png';
 import item2 from '../images/Granite dining table with dining chair 1.png';
 import item3 from '../images/Mask group (1).png';
 import item4 from '../images/Plain console with teak mirror 1.png';
+import Link from 'next/link';
 
 const TopPicks: React.FC = () => {
   const products = [
@@ -45,7 +46,7 @@ const TopPicks: React.FC = () => {
         products={products}
       />
       <div className='w-full flex items-center justify-center '>
-      <button className='w-[115px] h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer -mt-20 lg:-mt-10 mb-10'>View All</button>
+      <Link href="/shop"><button className='w-[115px] h-[49px] border-black border-b-2 text-2xl font-medium cursor-pointer -mt-20 lg:-mt-10 mb-10'>View All</button></Link>
       </div>
     </div>
   );

@@ -2,13 +2,14 @@ import React from 'react'
 
 import Image from 'next/image'
 import sofa from '../images/Rocket single seater 1.png'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='w-full h-screen relative flex items-center justify-center bg-[#FBEBB5] -z-0'>
         <div className=' flex  flex-col sm:flex-row  item-center justify-center mt-36 sm:mt-0'>
         <div className='flex flex-col gap-5 sm:gap-10 justify-center sm:ml-10 md:ml-32 mx-auto '>
             <div className='w-[300px] sm:[100px] text-3xl lg:w-[440px] lg:text-6xl font-medium text-center sm:text-start mx-auto sm:mx-0 ml-5 '>Rocket single seater</div>
-            <p className='w-fit h-fit pb-3 border-black border-b-2 font-medium text-2xl cursor-pointer  mx-auto sm:mx-0'>Shop Now</p>
+           <Link href="/shop"><p className='w-fit h-fit pb-3 border-black border-b-2 font-medium text-2xl cursor-pointer  mx-auto sm:mx-0'>Shop Now</p></Link>
         </div>
         <div className='lg:mr-20 md:mb-0 md:pt-40'>
             <Image
