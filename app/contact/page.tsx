@@ -5,7 +5,7 @@ import { FaPhoneAlt } from 'react-icons/fa'
 import { FaClock } from 'react-icons/fa6'
 import Facilities from '../components/Facilities'
 
-const contact = () => {
+const Contact = () => {
   return (
     <div>
         <div>
@@ -74,4 +74,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
