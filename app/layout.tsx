@@ -1,10 +1,14 @@
+
 import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import { Poppins } from 'next/font/google';
+import Header from "./components/Header";
+import ClientProviders from "./actions/ClientProviders";
+import Providers from "./Providers";
+
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -34,9 +38,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}><Header/>
+      <body className={poppins.className}>
+        <Providers>
+        <ClientProviders>
+        <Header/>
         {children}
         <Footer/>
+        </ClientProviders>
+        </Providers>
       </body>
     </html>
   );

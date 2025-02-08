@@ -2,7 +2,7 @@ import React from 'react'
 import Main from '../components/Main'
 import Facilities from '../components/Facilities'
 
-const account = () => {
+const Account = () => {
   return (
     <div>
         <div>
@@ -50,4 +50,4 @@ const account = () => {
   )
 }
 
-export default account
+export default Account

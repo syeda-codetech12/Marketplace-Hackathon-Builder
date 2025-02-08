@@ -1,8 +1,8 @@
 import React from 'react'
 
 import Image from 'next/image'
-import sofa from '../images/Rocket single seater 1.png'
 import Link from 'next/link'
+import chair from '../images/chair.webp'
 const Hero = () => {
   return (
     <div className='w-full h-screen relative flex items-center justify-center bg-[#FBEBB5] -z-0'>
@@ -13,11 +13,11 @@ const Hero = () => {
         </div>
         <div className='lg:mr-20 md:mb-0 md:pt-40'>
             <Image
-            src={sofa}
+            src={chair}
             alt='sofa'
             width={800}
             height={400}
-              className='w-[90%] h-[80%] sm:w-[150%] sm:h-[120%] md:pb-60 lg:w-[800px] lg:h-[800px] lg:mt-40   xl:w-[800px] xl:h-[800px] mx-auto sm:mx-0'/>
+            className='w-[80%] h-[70%] sm:w-[15rem] sm:h-[20rem] md:w-[250px] md:h-[600px]  md:pb-60 lg:w-[22rem] lg:h-[45rem] lg:mt-40 mx-auto sm:mx-0'/>
         </div>
         </div>
     </div>

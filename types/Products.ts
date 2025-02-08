@@ -10,5 +10,6 @@ export interface Product {
     name: string;
     image?: any;
     _id: string;    
+    quantity: number
   }
   

@@ -5,6 +5,7 @@ import TopPicks from './components/TopPicks'
 import Arrivals from './components/Arrivals'
 import Blogs from './components/Blogs'
 import Story from './components/Story'
+import Category from './components/Category'
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
       <Hero/>
       <Pieces/>
       <TopPicks/>
+      <Category/>
       <Arrivals/>
       <Blogs/>
       <Story/>

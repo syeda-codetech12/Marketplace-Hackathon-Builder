@@ -49,16 +49,16 @@ const contact = () => {
                         <div className='mx-auto xl:w-[635px] xl:mx-0'>
                             <div>
                                 <p className='font-medium mb-8'>Your Name</p>
-                                <input type="text" placeholder='abc' className='w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
+                                <input type="text" placeholder='abc' className='bg-white w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
 
                                 <p className='font-medium mb-8'>Email Address</p>
-                                <input type="text" placeholder='Abc@def.com' className='w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
+                                <input type="text" placeholder='Abc@def.com' className=' bg-white w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
 
                                 <p className='font-medium mb-8'>Subject</p>
-                                <input type="text" placeholder='This is an optional' className='w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
+                                <input type="text" placeholder='This is an optional' className='bg-white w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[75px] rounded-md border-black border-[1px] p-4 mb-10' />
 
                                 <p className='font-medium mb-10'>Message</p>
-                                <input type="text" placeholder='Hi! i’d like to ask about' className='w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[115px] rounded-md border-black border-[1px] p-4 mb-5' />
+                                <input type="text" placeholder='Hi! i’d like to ask about' className='bg-white w-[70vw] h-[20%] sm:w-[50vw] xl:w-[525px] xl:h-[115px] rounded-md border-black border-[1px] p-4 mb-5' />
 
                                 <button className='w-[50%] md:w-[230px] md:h-[45px] rounded-lg border-black border-[1.35px] mt-8 block mx-auto md:mx-0'>Submit</button>
                             </div>
