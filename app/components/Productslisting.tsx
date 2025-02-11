@@ -233,22 +233,24 @@ import Link from 'next/link'
 import { Product } from '@/types/Products'
 import { client } from '@/sanity/lib/client'
 import { urlFor } from '@/sanity/lib/image'
-import Pagination from './Pagination' 
+import Pagination from './Pagination'
 import LoadingSpinner from './LoaderSpinner'
+
 interface ProductsListingProps {
   searchQuery: string;
 }
 
-export default function Productslisting({ searchQuery }: ProductsListingProps) {
+export default function ProductsListing({ searchQuery }: ProductsListingProps) {
   const [products, setProducts] = useState<Product[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
   const itemsPerPage = 6;
 
+  // Fetch products from Sanity
   useEffect(() => {
     async function fetchProducts() {
       setLoading(true);
-      const fetchedProduct: Product[] = await client.fetch(`*[_type == "product"]{
+      const fetchedProducts: Product[] = await client.fetch(`*[_type == "product"]{
         _id,
         "id": id,
         name, 
@@ -256,7 +258,7 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
         category,
         "image": image.asset._ref,
       }`);
-      setProducts(fetchedProduct);
+      setProducts(fetchedProducts);
       setLoading(false);
     }
     fetchProducts();
@@ -271,7 +273,13 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
     return productName.includes(searchTerm) || productCategory.includes(searchTerm);
   });
 
-  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / itemsPerPage)); 
+  // Reset pagination to page 1 whenever searchQuery changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery]);
+
+  // Calculate total pages and paginated products
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / itemsPerPage));
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedProducts = filteredProducts.slice(startIndex, startIndex + itemsPerPage);
 
@@ -279,8 +287,7 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
     <div>
       {loading ? (
         <LoadingSpinner />
-      ) :
-      filteredProducts.length === 0 ? (
+      ) : filteredProducts.length === 0 ? (
         <div className="flex flex-col items-center justify-center my-20">
           <p className="text-gray-500 text-lg font-semibold">🚫 No products found</p>
           <p className="text-gray-400 text-sm mt-2">Try searching with different keywords.</p>
@@ -297,7 +304,7 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
                       alt="Product Image"
                       width={200}
                       height={190}
-                      priority 
+                      priority
                       className="object-cover h-[190px]"
                     />
                   </div>
@@ -312,7 +319,12 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
           </div>
 
           {/* Pagination (Always Visible) */}
-          <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={setCurrentPage} />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+            searchQuery={searchQuery} // Pass searchQuery to Pagination
+          />
         </>
       )}
     </div>

@@ -323,7 +323,7 @@ const Header = () => {
                   <div className="card-body bg-white border-[1px] border-[#B88E2F] rounded-sm">
                     <span className="text-lg font-bold">{cartCount || 0} Items</span>
                     {/* Show actual subtotal */}
-                    <span className=" text-[#B88E2F]">Subtotal: ${cartSubtotal}</span>
+                    <span className=" text-[#B88E2F]">Subtotal: Rs.{cartSubtotal}</span>
                     <div className="card-actions">
                     <Link href="/cart" prefetch={true}>  <button className="btn btn-block bg-[#B88E2F] text-black hover:bg-[#B88E2F]/80">View cart</button> </Link>
                     </div>

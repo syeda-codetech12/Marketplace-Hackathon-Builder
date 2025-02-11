@@ -436,14 +436,14 @@ const Productdetail = ({ product }: { product: Product }) => {
 
           <div className='xl:w-[1150px] flex flex-col xl:flex-row items-start justify-center gap-20'>
             {/* Product Image */}
-            <div className='w-52 h-52 sm:w-[445px] sm:h-[500px] bg-[#FFF9E5] flex items-center justify-center mx-auto sm:mx-0'>
+            <div className='w-52 h-52 sm:w-[445px] sm:h-[500px] md:bg-[#FFF9E5] flex items-center justify-center mx-auto sm:mx-0'>
               <Image
                 src={urlFor(product.image).url()}
                 alt={product.name}
                 width={480}
                 height={380}
                 priority 
-                className='h-[380px]'
+                className='h-52 sm:h-[380px]'
               />
             </div>
 
