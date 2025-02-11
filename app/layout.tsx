@@ -13,6 +13,7 @@ import Providers from "./Providers";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'], // Customize weights
+  display: "swap"
 });
 
 // const geistSans = localFont({

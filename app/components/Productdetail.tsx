@@ -442,6 +442,7 @@ const Productdetail = ({ product }: { product: Product }) => {
                 alt={product.name}
                 width={480}
                 height={380}
+                priority 
                 className='h-[380px]'
               />
             </div>

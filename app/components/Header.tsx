@@ -282,10 +282,10 @@ const Header = () => {
     <header className='fixed w-screen h-[70px] flex items-center justify-center z-50'>
       <div className="flex lg:w-[1200px] lg:flex gap-40 items-end justify-end">
         <nav className="lg:flex gap-14 text-black font-medium lg:justify-center hidden">
-          <Link href="/" className='hover:text-[#B88E2F] duration-300'>Home</Link>
-          <Link href="/shop" className='hover:text-[#B88E2F] duration-300'>Shop</Link>
-          <Link href="/blog" className='hover:text-[#B88E2F] duration-300'>Blog</Link>
-          <Link href="/contact" className='hover:text-[#B88E2F] duration-300'>Contact</Link>
+          <Link href="/" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Home</Link>
+          <Link href="/shop" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Shop</Link>
+          <Link href="/blog" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Blog</Link>
+          <Link href="/contact" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Contact</Link>
         </nav>
 
         <div className='lg:w-[230px] flex flex-row items-center gap-8'>
@@ -296,7 +296,7 @@ const Header = () => {
           <Link href="/checkout">
             <IoHeartOutline className='size-6'/>
           </Link>
-          <Link href="/cart">
+          <Link href="/cart" prefetch={true}>
             <div className='-ml-4'>
               <div className="dropdown dropdown-end">
                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle group cursor-pointer">
@@ -325,7 +325,7 @@ const Header = () => {
                     {/* Show actual subtotal */}
                     <span className=" text-[#B88E2F]">Subtotal: ${cartSubtotal}</span>
                     <div className="card-actions">
-                      <button className="btn btn-block bg-[#B88E2F] text-black hover:bg-[#B88E2F]/80">View cart</button>
+                    <Link href="/cart" prefetch={true}>  <button className="btn btn-block bg-[#B88E2F] text-black hover:bg-[#B88E2F]/80">View cart</button> </Link>
                     </div>
                   </div>
                 </div>
@@ -343,10 +343,10 @@ const Header = () => {
             <SheetTitle></SheetTitle>
             <SheetDescription>
               <nav className="flex flex-col gap-5">
-                <Link href="/">Home</Link>
-                <Link href="/shop">Shop</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/" prefetch={true}>Home</Link>
+                <Link href="/shop" prefetch={true}>Shop</Link>
+                <Link href="/blog" prefetch={true}>Blog</Link>
+                <Link href="/contact" prefetch={true}>Contact</Link>
               </nav>
             </SheetDescription>
           </SheetHeader>

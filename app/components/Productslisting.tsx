@@ -297,6 +297,7 @@ export default function Productslisting({ searchQuery }: ProductsListingProps) {
                       alt="Product Image"
                       width={200}
                       height={190}
+                      priority 
                       className="object-cover h-[190px]"
                     />
                   </div>

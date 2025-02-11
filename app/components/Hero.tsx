@@ -17,6 +17,7 @@ const Hero = () => {
             alt='sofa'
             width={800}
             height={400}
+            priority 
             className='w-[80%] h-[70%] sm:w-[15rem] sm:h-[20rem] md:w-[250px] md:h-[600px]  md:pb-60 lg:w-[22rem] lg:h-[45rem] lg:mt-40 mx-auto sm:mx-0'/>
         </div>
         </div>

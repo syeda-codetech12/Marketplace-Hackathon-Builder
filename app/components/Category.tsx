@@ -20,6 +20,7 @@ export default function Category() {
                   alt='Category Bed'
                   width={350}
                   height={350}
+                  priority 
                   className='lg:w-[350px] h-[250px] lg:h-[350px] rounded-xl duration-500 group-hover:scale-125'
                   />
                   <div className='hidden lg:block absolute -bottom-24 group-hover:bottom-2 duration-500 scroll-m-20 text-4xl font-bold tracking-tight bg-zinc-900/70 text-center text-white py-4 w-full'>
@@ -38,6 +39,7 @@ export default function Category() {
                   alt='Category Table'
                   width={350}
                   height={350}
+                  priority 
                   className='h-[250px] lg:h-[350px] rounded-xl duration-500 group-hover:scale-125'
                   />
                   <div className='hidden lg:block absolute -bottom-24 group-hover:bottom-2 duration-500 scroll-m-20 text-4xl font-bold tracking-tight bg-zinc-900/70 text-center text-white py-4 w-full'>
@@ -56,6 +58,7 @@ export default function Category() {
                   alt='Category Chair'
                   width={350}
                   height={350}
+                  priority 
                   className='h-[250px] lg:h-[350px] rounded-xl duration-500 group-hover:scale-125'
                   />
                   <div className='hidden lg:block absolute -bottom-24 group-hover:bottom-2 duration-500 scroll-m-20 text-4xl font-bold tracking-tight bg-zinc-900/70 text-center text-white py-4 w-full'>
@@ -74,6 +77,7 @@ export default function Category() {
                   alt='Category Sofa'
                   width={350}
                   height={350}
+                  priority 
                   className='h-[250px] lg:h-[350px] rounded-xl duration-500 group-hover:scale-125'
                   />
                   <div className='hidden lg:block absolute -bottom-24 group-hover:bottom-2 duration-500 scroll-m-20 text-4xl font-bold tracking-tight bg-zinc-900/70 text-center text-white py-4 w-full'>

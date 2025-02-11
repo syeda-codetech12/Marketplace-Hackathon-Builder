@@ -79,6 +79,7 @@ const TopPicks = () => {
                   alt='Product image'
                   width={400}
                   height={190}
+                  priority 
                   className="object-cover h-[190px] lg:h-[250px] md:rounded-2xl duration-500 group-hover:scale-110 "/>
                 )
                 }

@@ -13,25 +13,21 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 600); // Adjust delay based on API response
+    }, 800);
 
     return () => clearTimeout(timer);
   }, [pathname, searchParams]);
 
   if (loading) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center bg-[#FBF9E5] z-50">
-        <div className="relative w-20 h-20 scale-animation">
-          {/* Outer Thin Ring */}
-          <div className="absolute inset-0 border-[3px] border-transparent border-t-[#B88E2F] border-b-[#B88E2F] rounded-full animate-spin-slow"></div>
-
-          {/* Inner Bold Ring */}
-          <div className="absolute inset-2 border-[6px] border-[#B88E2F] rounded-full animate-spin-reverse"></div>
-
-          {/* Center Pulsating Dot */}
-          <div className="w-6 h-6 bg-[#B88E2F] rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-        </div>
-      </div>
+     <div className="fixed inset-0 flex items-center justify-center bg-[#FBF9E5] z-50">
+     <div className="relative w-16 h-16 flex items-center justify-center">
+       {/* Three Spinning Circles */}
+       <div className="absolute w-4 h-4 bg-[#B88E2F] rounded-full animate-spin-loader delay-200"></div>
+       {/* <div className="absolute w-6 h-6 bg-[#D8B67B] rounded-full animate-spin-loader delay-200"></div> */}
+       <div className="absolute w-8 h-8 bg-[#E5CBAF] rounded-full animate-spin-loader delay-400"></div>
+     </div>
+   </div>
     );
   }
 
