@@ -282,19 +282,19 @@ const Header = () => {
     <header className='fixed w-screen h-[70px] flex items-center justify-center z-50'>
       <div className="flex lg:w-[1200px] lg:flex gap-40 items-end justify-end">
         <nav className="lg:flex gap-14 text-black font-medium lg:justify-center hidden">
-          <Link href="/" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Home</Link>
-          <Link href="/shop" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Shop</Link>
-          <Link href="/blog" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Blog</Link>
-          <Link href="/contact" prefetch={true} className='hover:text-[#B88E2F] duration-300'>Contact</Link>
+          <Link href="/" prefetch={true} className='hover:text-[#B88E2F] cursor-pointer duration-300'>Home</Link>
+          <Link href="/shop" prefetch={true} className='hover:text-[#B88E2F] cursor-pointer duration-300'>Shop</Link>
+          <Link href="/blog" prefetch={true} className='hover:text-[#B88E2F] cursor-pointer duration-300'>Blog</Link>
+          <Link href="/contact" prefetch={true} className='hover:text-[#B88E2F] cursor-pointer duration-300'>Contact</Link>
         </nav>
 
         <div className='lg:w-[230px] flex flex-row items-center gap-8'>
           <Link href="/account">
-            <IoPersonOutline className='size-6'/>
+            <IoPersonOutline className='size-6 hover:text-[#B88E2F] cursor-pointer'/>
           </Link>
-          <IoSearchOutline className='size-6 cursor-pointer'/>
-          <Link href="/checkout">
-            <IoHeartOutline className='size-6'/>
+          <IoSearchOutline className='size-6 hover:text-[#B88E2F]  cursor-pointer'/>
+          <Link href="/wishlist">
+            <IoHeartOutline className='size-6 hover:text-[#B88E2F] cursor-pointer'/>
           </Link>
           <Link href="/cart" prefetch={true}>
             <div className='-ml-4'>
